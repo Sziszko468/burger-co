@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #6b0f1a;
+  --color-bg-dark: #3d0509;
+  --color-bg-light: #8b1a26;
+  --color-gold: #c9943a;
+  --color-gold-light: #e8b86d;
+  --color-white: #fdf6ec;
+  --color-gray: #c4a882;
+  --color-sesame: #f0d080;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Hero background glow */
+.hero-glow {
+  background: radial-gradient(ellipse at center, rgba(201, 148, 58, 0.25) 0%, transparent 70%);
+}
+
+/* Glassmorphism utility for sticky nav */
+.glass-nav {
+  @apply bg-crimson-dark/80 backdrop-blur-md border-b border-crimson-light/20;
+}
